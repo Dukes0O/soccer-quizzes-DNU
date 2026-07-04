@@ -1,0 +1,37 @@
+{
+  "title": "The Social Contract (Books I–II)",
+  "fullTitle": "The Social Contract; or, Principles of Political Right",
+  "author": "Jean-Jacques Rousseau",
+  "published": 1762,
+  "translation": "G. D. H. Cole (1913), rendered into modern English (2026)",
+  "edition": "Modern English rendering of Books I–II",
+  "source": {
+    "name": "Project Gutenberg #46333 / Standard Ebooks",
+    "url": "https://www.gutenberg.org/ebooks/46333",
+    "originalText": "source/"
+  },
+  "index": "README.md",
+  "chapters": [
+    { "book": 1, "chapter": 1,  "roman": "I",   "group": "Book I",  "title": "Subject of the First Book", "file": "chapters/1-01-subject-of-the-first-book.md" },
+    { "book": 1, "chapter": 2,  "roman": "II",  "group": "Book I",  "title": "The First Societies", "file": "chapters/1-02-the-first-societies.md" },
+    { "book": 1, "chapter": 3,  "roman": "III", "group": "Book I",  "title": "The Right of the Strongest", "file": "chapters/1-03-the-right-of-the-strongest.md" },
+    { "book": 1, "chapter": 4,  "roman": "IV",  "group": "Book I",  "title": "Slavery", "file": "chapters/1-04-slavery.md" },
+    { "book": 1, "chapter": 5,  "roman": "V",   "group": "Book I",  "title": "That We Must Always Go Back to a First Convention", "file": "chapters/1-05-that-we-must-always-go-back-to-a-first-convention.md" },
+    { "book": 1, "chapter": 6,  "roman": "VI",  "group": "Book I",  "title": "The Social Compact", "file": "chapters/1-06-the-social-compact.md" },
+    { "book": 1, "chapter": 7,  "roman": "VII", "group": "Book I",  "title": "The Sovereign", "file": "chapters/1-07-the-sovereign.md" },
+    { "book": 1, "chapter": 8,  "roman": "VIII","group": "Book I",  "title": "The Civil State", "file": "chapters/1-08-the-civil-state.md" },
+    { "book": 1, "chapter": 9,  "roman": "IX",  "group": "Book I",  "title": "Real Property", "file": "chapters/1-09-real-property.md" },
+    { "book": 2, "chapter": 1,  "roman": "I",   "group": "Book II", "title": "That Sovereignty Is Inalienable", "file": "chapters/2-01-that-sovereignty-is-inalienable.md" },
+    { "book": 2, "chapter": 2,  "roman": "II",  "group": "Book II", "title": "That Sovereignty Is Indivisible", "file": "chapters/2-02-that-sovereignty-is-indivisible.md" },
+    { "book": 2, "chapter": 3,  "roman": "III", "group": "Book II", "title": "Whether the General Will Is Fallible", "file": "chapters/2-03-whether-the-general-will-is-fallible.md" },
+    { "book": 2, "chapter": 4,  "roman": "IV",  "group": "Book II", "title": "The Limits of the Sovereign Power", "file": "chapters/2-04-the-limits-of-the-sovereign-power.md" },
+    { "book": 2, "chapter": 5,  "roman": "V",   "group": "Book II", "title": "The Right of Life and Death", "file": "chapters/2-05-the-right-of-life-and-death.md" },
+    { "book": 2, "chapter": 6,  "roman": "VI",  "group": "Book II", "title": "Law", "file": "chapters/2-06-law.md" },
+    { "book": 2, "chapter": 7,  "roman": "VII", "group": "Book II", "title": "The Legislator", "file": "chapters/2-07-the-legislator.md" },
+    { "book": 2, "chapter": 8,  "roman": "VIII","group": "Book II", "title": "The People", "file": "chapters/2-08-the-people.md" },
+    { "book": 2, "chapter": 9,  "roman": "IX",  "group": "Book II", "title": "The People (Continued)", "file": "chapters/2-09-the-people-continued.md" },
+    { "book": 2, "chapter": 10, "roman": "X",   "group": "Book II", "title": "The People (Continued)", "file": "chapters/2-10-the-people-continued-2.md" },
+    { "book": 2, "chapter": 11, "roman": "XI",  "group": "Book II", "title": "The Various Systems of Legislation", "file": "chapters/2-11-the-various-systems-of-legislation.md" },
+    { "book": 2, "chapter": 12, "roman": "XII", "group": "Book II", "title": "The Division of the Laws", "file": "chapters/2-12-the-division-of-the-laws.md" }
+  ]
+}

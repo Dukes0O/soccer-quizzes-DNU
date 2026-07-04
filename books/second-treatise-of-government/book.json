@@ -1,0 +1,41 @@
+{
+  "title": "Second Treatise of Government",
+  "fullTitle": "An Essay Concerning the True Original, Extent and End of Civil Government",
+  "author": "John Locke",
+  "published": 1690,
+  "edition": "Modern English rendering (2026)",
+  "source": {
+    "name": "Project Gutenberg eBook #7370",
+    "url": "https://www.gutenberg.org/ebooks/7370",
+    "originalText": "source/7370.txt"
+  },
+  "index": "README.md",
+  "chapters": [
+    { "chapter": 0,  "roman": null,    "title": "Preface", "sections": null, "file": "chapters/00-preface.md" },
+    { "chapter": 1,  "roman": "I",     "title": "Introduction", "sections": [1, 3], "file": "chapters/01-introduction.md" },
+    { "chapter": 2,  "roman": "II",    "title": "Of the State of Nature", "sections": [4, 15], "file": "chapters/02-of-the-state-of-nature.md" },
+    { "chapter": 3,  "roman": "III",   "title": "Of the State of War", "sections": [16, 21], "file": "chapters/03-of-the-state-of-war.md" },
+    { "chapter": 4,  "roman": "IV",    "title": "Of Slavery", "sections": [22, 24], "file": "chapters/04-of-slavery.md" },
+    { "chapter": 5,  "roman": "V",     "title": "Of Property", "sections": [25, 51], "file": "chapters/05-of-property.md" },
+    { "chapter": 6,  "roman": "VI",    "title": "Of Paternal Power", "sections": [52, 76], "file": "chapters/06-of-paternal-power.md" },
+    { "chapter": 7,  "roman": "VII",   "title": "Of Political or Civil Society", "sections": [77, 94], "file": "chapters/07-of-political-or-civil-society.md" },
+    { "chapter": 8,  "roman": "VIII",  "title": "Of the Beginning of Political Societies", "sections": [95, 122], "file": "chapters/08-of-the-beginning-of-political-societies.md" },
+    { "chapter": 9,  "roman": "IX",    "title": "Of the Ends of Political Society and Government", "sections": [123, 131], "file": "chapters/09-of-the-ends-of-political-society-and-government.md" },
+    { "chapter": 10, "roman": "X",     "title": "Of the Forms of a Commonwealth", "sections": [132, 133], "file": "chapters/10-of-the-forms-of-a-commonwealth.md" },
+    { "chapter": 11, "roman": "XI",    "title": "Of the Extent of the Legislative Power", "sections": [134, 142], "file": "chapters/11-of-the-extent-of-the-legislative-power.md" },
+    { "chapter": 12, "roman": "XII",   "title": "Of the Legislative, Executive, and Federative Power of the Commonwealth", "sections": [143, 148], "file": "chapters/12-of-the-legislative-executive-and-federative-power.md" },
+    { "chapter": 13, "roman": "XIII",  "title": "Of the Subordination of the Powers of the Commonwealth", "sections": [149, 158], "file": "chapters/13-of-the-subordination-of-the-powers.md" },
+    { "chapter": 14, "roman": "XIV",   "title": "Of Prerogative", "sections": [159, 168], "file": "chapters/14-of-prerogative.md" },
+    { "chapter": 15, "roman": "XV",    "title": "Of Paternal, Political, and Despotical Power, Considered Together", "sections": [169, 174], "file": "chapters/15-of-paternal-political-and-despotical-power.md" },
+    { "chapter": 16, "roman": "XVI",   "title": "Of Conquest", "sections": [175, 196], "file": "chapters/16-of-conquest.md" },
+    { "chapter": 17, "roman": "XVII",  "title": "Of Usurpation", "sections": [197, 198], "file": "chapters/17-of-usurpation.md" },
+    { "chapter": 18, "roman": "XVIII", "title": "Of Tyranny", "sections": [199, 210], "file": "chapters/18-of-tyranny.md" },
+    { "chapter": 19, "roman": "XIX",   "title": "Of the Dissolution of Government", "sections": [211, 243], "file": "chapters/19-of-the-dissolution-of-government.md" }
+  ],
+  "chapterFileSchema": {
+    "format": "Markdown with YAML front matter",
+    "frontMatter": ["book", "author", "year", "translation", "chapter", "title", "sections", "source", "tags"],
+    "sections": ["Overview", "Key Concepts", "Archaic Terms", "Modern Translation"],
+    "sectionHeadingPattern": "### § <n>"
+  }
+}

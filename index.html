@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soccer Defense Challenge v2</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Great Books — Modern English Library</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
-    <div id="app"></div>
-    <script src="script.js"></script>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <a id="home-link" href="#/">&#128218; Library</a>
+    <div id="book-label"></div>
+    <nav id="toc"></nav>
+  </aside>
+  <main id="content"><p class="loading">Loading&hellip;</p></main>
+</div>
+<script src="assets/marked.js"></script>
+<script src="reader.js"></script>
 </body>
 </html>
