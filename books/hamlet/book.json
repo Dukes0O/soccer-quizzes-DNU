@@ -1,0 +1,19 @@
+{
+  "title": "Hamlet, Prince of Denmark",
+  "author": "William Shakespeare",
+  "published": "c. 1601",
+  "edition": "Modern English rendering (2026)",
+  "source": {
+    "name": "Project Gutenberg #1524 (Collins edition)",
+    "url": "https://www.gutenberg.org/ebooks/1524",
+    "originalText": "source/1524.txt"
+  },
+  "index": "README.md",
+  "chapters": [
+    { "chapter": 1, "roman": "I",   "title": "Act I",   "label": "Act I — The Ghost",                   "file": "chapters/01-act-i.md" },
+    { "chapter": 2, "roman": "II",  "title": "Act II",  "label": "Act II — The Antic Disposition",      "file": "chapters/02-act-ii.md" },
+    { "chapter": 3, "roman": "III", "title": "Act III", "label": "Act III — The Mousetrap",             "file": "chapters/03-act-iii.md" },
+    { "chapter": 4, "roman": "IV",  "title": "Act IV",  "label": "Act IV — Exile and Return",           "file": "chapters/04-act-iv.md" },
+    { "chapter": 5, "roman": "V",   "title": "Act V",   "label": "Act V — The Churchyard and the Duel", "file": "chapters/05-act-v.md" }
+  ]
+}

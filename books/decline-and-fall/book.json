@@ -1,0 +1,25 @@
+{
+  "title": "The Decline and Fall of the Roman Empire (Chapters XV–XVI)",
+  "fullTitle": "The History of the Decline and Fall of the Roman Empire, Volume 1",
+  "author": "Edward Gibbon",
+  "published": 1776,
+  "edition": "Modern English rendering of Chapters XV–XVI",
+  "source": {
+    "name": "Project Gutenberg #731 / Standard Ebooks",
+    "url": "https://www.gutenberg.org/ebooks/731",
+    "originalText": "source/"
+  },
+  "index": "README.md",
+  "chapters": [
+    { "chapter": 15, "part": 1, "group": "Chapter XV — The Progress of the Christian Religion", "title": "Chapter XV, Part 1", "label": "Part 1 — The Five Causes; Zeal Inherited from Judaism", "file": "chapters/ch15-part-1.md" },
+    { "chapter": 15, "part": 2, "group": "Chapter XV — The Progress of the Christian Religion", "title": "Chapter XV, Part 2", "label": "Part 2 — Idolatry, Immortality, and Miracles", "file": "chapters/ch15-part-2.md" },
+    { "chapter": 15, "part": 3, "group": "Chapter XV — The Progress of the Christian Religion", "title": "Chapter XV, Part 3", "label": "Part 3 — Christian Morals and the Rise of Church Government", "file": "chapters/ch15-part-3.md" },
+    { "chapter": 15, "part": 4, "group": "Chapter XV — The Progress of the Christian Religion", "title": "Chapter XV, Part 4", "label": "Part 4 — Church Wealth, Discipline, and the Causes Reviewed", "file": "chapters/ch15-part-4.md" },
+    { "chapter": 15, "part": 5, "group": "Chapter XV — The Progress of the Christian Religion", "title": "Chapter XV, Part 5", "label": "Part 5 — Counting the Christians; the Silence of the Pagans", "file": "chapters/ch15-part-5.md" },
+    { "chapter": 16, "part": 1, "group": "Chapter XVI — The Conduct of Rome Towards the Christians", "title": "Chapter XVI, Part 1", "label": "Part 1 — Why a Tolerant Empire Turned on the Christians", "file": "chapters/ch16-part-1.md" },
+    { "chapter": 16, "part": 2, "group": "Chapter XVI — The Conduct of Rome Towards the Christians", "title": "Chapter XVI, Part 2", "label": "Part 2 — Nero, Domitian, and the Rules of Trajan", "file": "chapters/ch16-part-2.md" },
+    { "chapter": 16, "part": 3, "group": "Chapter XVI — The Conduct of Rome Towards the Christians", "title": "Chapter XVI, Part 3", "label": "Part 3 — Cyprian, Martyrdom, and the Intervals of Peace", "file": "chapters/ch16-part-3.md" },
+    { "chapter": 16, "part": 4, "group": "Chapter XVI — The Conduct of Rome Towards the Christians", "title": "Chapter XVI, Part 4", "label": "Part 4 — Diocletian and the Great Persecution", "file": "chapters/ch16-part-4.md" },
+    { "chapter": 16, "part": 5, "group": "Chapter XVI — The Conduct of Rome Towards the Christians", "title": "Chapter XVI, Part 5", "label": "Part 5 — The End of Persecution; the Reckoning of the Martyrs", "file": "chapters/ch16-part-5.md" }
+  ]
+}

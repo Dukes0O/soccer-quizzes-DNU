@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "slug": "second-treatise-of-government",
+      "title": "Second Treatise of Government",
+      "author": "John Locke",
+      "year": 1690,
+      "path": "books/second-treatise-of-government",
+      "description": "The founding text of liberal political philosophy: government by consent, natural rights to life, liberty, and property, and the people's right to dissolve a government that betrays its trust. All 243 sections in modern English."
+    },
+    {
+      "slug": "hamlet",
+      "title": "Hamlet, Prince of Denmark",
+      "author": "William Shakespeare",
+      "year": "c. 1601",
+      "path": "books/hamlet",
+      "description": "Shakespeare's tragedy of revenge, conscience, and delay, rendered act by act into modern English — every speech, scene, and stage direction."
+    },
+    {
+      "slug": "the-social-contract",
+      "title": "The Social Contract (Books I–II)",
+      "author": "Jean-Jacques Rousseau",
+      "year": 1762,
+      "path": "books/the-social-contract",
+      "description": "“Man is born free; and everywhere he is in chains.” Rousseau's account of legitimate political authority — the social compact, the sovereign, and the general will — from G. D. H. Cole's translation, modernized."
+    },
+    {
+      "slug": "decline-and-fall",
+      "title": "The Decline and Fall of the Roman Empire (Chapters XV–XVI)",
+      "author": "Edward Gibbon",
+      "year": 1776,
+      "path": "books/decline-and-fall",
+      "description": "Gibbon's two most famous — and most notorious — chapters: the rise of Christianity and the conduct of Rome toward the Christians, with the irony fully intact."
+    }
+  ]
+}
