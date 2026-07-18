@@ -67,9 +67,11 @@
   }
 
   function isNaturalBreak(heading) {
-    // Paragraph-number headings in Locke are too numerous for inline
-    // navigation. They still receive IDs, so they remain linkable.
-    return heading.level >= 3 && !/^§\s*\d+/.test(heading.text);
+    return heading.level >= 3 && !isNumberedSection(heading);
+  }
+
+  function isNumberedSection(heading) {
+    return heading.level >= 3 && /^§\s*\d+/.test(heading.text);
   }
 
   function makeLink(slug, file, id, label, className) {
@@ -80,11 +82,20 @@
     return link;
   }
 
+  function makeRouteLink(slug, file, label, className) {
+    var link = document.createElement('a');
+    link.href = routePath(slug, file);
+    link.textContent = label;
+    if (className) link.className = className;
+    return link;
+  }
+
   function addPageNavigation(slug, file, headings) {
     var links = headings.filter(function (heading) {
       return heading.level === 2 || isNaturalBreak(heading);
     });
-    if (links.length === 0) return;
+    var numberedSections = headings.filter(isNumberedSection);
+    if (links.length === 0 && numberedSections.length === 0) return;
 
     var nav = document.createElement('nav');
     nav.id = 'page-navigation';
@@ -103,6 +114,23 @@
       list.appendChild(makeLink(slug, file, heading.id, heading.text, className));
     });
     nav.appendChild(list);
+
+    if (numberedSections.length > 0) {
+      var details = document.createElement('details');
+      details.className = 'page-nav-details';
+      var summary = document.createElement('summary');
+      summary.textContent = 'Jump to numbered sections (' + numberedSections.length + ')';
+      details.appendChild(summary);
+
+      var sectionLinks = document.createElement('div');
+      sectionLinks.className = 'page-nav-section-links';
+      numberedSections.forEach(function (heading) {
+        sectionLinks.appendChild(makeLink(slug, file, heading.id, heading.text,
+          'page-nav-link page-nav-section-link'));
+      });
+      details.appendChild(sectionLinks);
+      nav.appendChild(details);
+    }
 
     var firstHeading = content.querySelector('h1');
     if (firstHeading) firstHeading.insertAdjacentElement('afterend', nav);
@@ -149,10 +177,48 @@
     });
   }
 
-  function decorateContent(slug, file) {
+  function addChapterPager(slug, book, file) {
+    if (!file || !book || !book.chapters) return;
+    var chapters = book.chapters;
+    var currentIndex = chapters.findIndex(function (chapter) {
+      return chapter.file.replace(/^chapters\//, '') === file;
+    });
+    if (currentIndex === -1) return;
+
+    var pager = document.createElement('nav');
+    pager.className = 'chapter-pager';
+    pager.setAttribute('aria-label', 'Chapter navigation');
+
+    if (currentIndex > 0) {
+      var previous = chapters[currentIndex - 1];
+      pager.appendChild(makeRouteLink(slug, previous.file.replace(/^chapters\//, ''),
+        '← ' + (previous.label || previous.title), 'chapter-pager-link chapter-pager-previous'));
+    } else {
+      pager.appendChild(document.createElement('span'));
+    }
+
+    var contents = document.createElement('a');
+    contents.href = routePath(slug);
+    contents.textContent = 'Contents';
+    contents.className = 'chapter-pager-contents';
+    pager.appendChild(contents);
+
+    if (currentIndex < chapters.length - 1) {
+      var next = chapters[currentIndex + 1];
+      pager.appendChild(makeRouteLink(slug, next.file.replace(/^chapters\//, ''),
+        (next.label || next.title) + ' →', 'chapter-pager-link chapter-pager-next'));
+    } else {
+      pager.appendChild(document.createElement('span'));
+    }
+
+    content.appendChild(pager);
+  }
+
+  function decorateContent(slug, file, book) {
     var headings = addHeadingIds();
     addPageNavigation(slug, file, headings);
     addSectionPagers(slug, file, headings);
+    addChapterPager(slug, book, file);
   }
 
   function scrollToFragment(fragment) {
@@ -258,7 +324,7 @@
         renderBookTOC(book, slug, null);
         content.innerHTML = marked.parse(stripFrontMatter(md));
         rewriteLinks(slug, book, true, null);
-        decorateContent(slug, null);
+        decorateContent(slug, null, book);
         scrollToFragment(fragment);
       });
     });
@@ -274,7 +340,7 @@
         renderBookTOC(book, slug, file);
         content.innerHTML = marked.parse(stripFrontMatter(md));
         rewriteLinks(slug, book, false, file);
-        decorateContent(slug, file);
+        decorateContent(slug, file, book);
         scrollToFragment(fragment);
       });
     });

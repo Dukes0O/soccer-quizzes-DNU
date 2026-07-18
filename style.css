@@ -120,8 +120,25 @@ body {
 }
 .page-nav-link:hover { background: var(--border); }
 .page-nav-sub { margin-left: 1rem; font-size: 0.86rem; }
+.page-nav-details {
+  border-top: 1px solid var(--border);
+  margin-top: 0.55rem;
+  padding-top: 0.5rem;
+}
+.page-nav-details summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+.page-nav-section-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+  gap: 0.1rem 0.35rem;
+  margin-top: 0.4rem;
+}
+.page-nav-section-link { font-size: 0.82rem; }
 
-.section-pager {
+.section-pager, .chapter-pager {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -135,6 +152,10 @@ body {
 .section-pager-link { text-decoration: none; }
 .section-pager-next { text-align: right; }
 .section-pager-top { text-align: center; white-space: nowrap; }
+.chapter-pager { margin-top: 3rem; }
+.chapter-pager-link { text-decoration: none; }
+.chapter-pager-next { text-align: right; }
+.chapter-pager-contents { text-align: center; white-space: nowrap; }
 #content blockquote {
   margin: 1rem 0;
   padding: 0.6rem 1.1rem;
