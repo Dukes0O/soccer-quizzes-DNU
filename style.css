@@ -89,7 +89,52 @@ body {
 #content h2 { font-size: 1.35rem; margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
 #content h3 { font-size: 1.1rem; margin-top: 1.8rem; color: var(--accent); }
 #content h4 { margin-top: 1.5rem; }
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  scroll-margin-top: 1.25rem;
+}
 #content a { color: var(--accent); }
+
+.page-nav {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--sidebar-bg);
+  padding: 0.75rem 1rem;
+  margin: 0 0 2rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+}
+.page-nav-title {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+.page-nav-links { display: grid; gap: 0.1rem; }
+.page-nav-link {
+  display: block;
+  padding: 0.18rem 0.35rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.page-nav-link:hover { background: var(--border); }
+.page-nav-sub { margin-left: 1rem; font-size: 0.86rem; }
+
+.section-pager {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border);
+  margin: 1.8rem 0 2.2rem;
+  padding-top: 0.65rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+}
+.section-pager-link { text-decoration: none; }
+.section-pager-next { text-align: right; }
+.section-pager-top { text-align: center; white-space: nowrap; }
 #content blockquote {
   margin: 1rem 0;
   padding: 0.6rem 1.1rem;
